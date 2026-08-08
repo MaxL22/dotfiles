@@ -18,6 +18,7 @@
 !.config/fastfetch/
 !.config/fuzzel/
 !.config/helix/
+!.config/install_dotfiles.sh
 !.config/kitty/
 !.config/mako/
 !.config/niri/
