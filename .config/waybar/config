@@ -1,0 +1,54 @@
+{
+  "margin-top": 5,
+  "margin-left": 10,
+  "margin-right": 10,
+  "height": 40,
+  "modules-left": [
+    "niri/window"
+  ],
+  "modules-center": [
+    "niri/workspaces"
+  ],
+  "modules-right": [
+    "cpu",
+    "memory",
+    "wireplumber",
+    "network",
+    "clock"
+  ],
+  "niri/window": {
+    "format": "{}",
+    "icon": true,
+    "icon-size": 22
+  },
+  "niri/workspaces": {
+  },
+  "clock": {
+    "format": "{:%Y-%m-%d %H:%M} ",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%H:%M} "
+  },
+  "cpu": {
+    "interval": 2,
+    "format": "CPU: {usage}% ",
+    "tooltip": false
+  },
+  "memory": {
+    "format": "Mem: {}%"
+  },
+  "network": {
+    "interval": 2,
+    "format-wifi": "{ifname}: {essid} ",
+    "format-ethernet": "{ipaddr}/{cidr}",
+    "tooltip-format": "{ifname} via {gwaddr} ",
+    "format-linked": "{ifname} (No IP) ",
+    "format-disconnected": "No internet :( ",
+    "format-alt": "{ifname}: {ipaddr}/{cidr} "
+  },
+  "wireplumber": {
+    "format": "Vol: {volume}%",
+    "format-muted": "Mute",
+    "max-volume": 150,
+    "scroll-step": 0.2
+  }
+}

@@ -1,0 +1,7 @@
+inherits = "ayu_evolve"
+
+"ui.linenr" = {fg = "#ffffff"}
+"ui.background" = {fg = "foreground"}
+
+[ui.cursorline]
+background = "#000000"

@@ -1,0 +1,32 @@
+# Ignore all files and folders
+/*
+
+# Allow subdirectories
+!/*/
+
+# Unignore repo setup files
+!.gitignore
+!.gitconfig
+!.gitignore_global
+
+# Shell Configuration
+!.zshrc
+!.zshenv
+
+# .config Subdirectories
+!.config/alacritty/
+!.config/fastfetch/
+!.config/fuzzel/
+!.config/helix/
+!.config/kitty/
+!.config/mako/
+!.config/niri/
+!.config/oh-my-zsh/
+.config/oh-my-zsh/plugins
+!.config/sway/
+!.config/waybar/
+
+# Ignore editor state and temp files
+*.swp
+*.swo
+*.tmp

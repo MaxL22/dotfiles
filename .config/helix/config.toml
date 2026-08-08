@@ -1,0 +1,8 @@
+theme = "theme"
+
+[keys.normal]
+"A-tab" = ":buffer-next"
+"A-S-tab" = ":buffer-previous"
+
+[editor]
+line-number = "relative"

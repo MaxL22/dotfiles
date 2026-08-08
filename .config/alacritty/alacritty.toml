@@ -1,0 +1,8 @@
+[font]
+size = 17
+
+[window]
+opacity = 0.88
+
+[colors.primary]
+background = "#000000"
