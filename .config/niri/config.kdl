@@ -657,8 +657,8 @@ spawn-sh-at-startup "swaybg -i /home/void/Documents/bg1.jpg"
 spawn-at-startup "pipewire"
 // dbus stuff
 spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP=Niri" "XDG_SESSION_TYPE=wayland"
-// spawn-at-startup "spotify"
-// spawn-at-startup "pavucontrol"
+spawn-at-startup "pavucontrol"
+spawn-at-startup "spotify"
 spawn-at-startup "firefox"
 
 // Needed to fix the background, it moves otherwise
@@ -703,6 +703,7 @@ prefer-no-csd
 
 workspace "T"
 workspace "B"
+workspace "S"
 
 window-rule {
     match app-id="^Firefox$"
@@ -711,7 +712,12 @@ window-rule {
 }
 window-rule {
     match app-id="^Spotify$"
+    open-on-workspace "S"
     open-maximized true
+}
+window-rule {
+    match app-id="^org.pulseaudio.pavucontrol$"
+    open-on-workspace "S"
 }
 window-rule {
     match app-id="^texstudio$"
