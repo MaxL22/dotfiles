@@ -19,5 +19,8 @@ bindkey "^H" backward-kill-word
 # Path for pipx
 export PATH="$HOME/.local/bin:$PATH"
 
+# Spicetify path
+export PATH="$HOME/.spicetify:$PATH"
+
 # On startup, I hope
 fastfetch
