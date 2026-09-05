@@ -731,3 +731,7 @@ window-rule {
     match app-id="^com.mattermost.Desktop$"
     open-maximized true
 }
+
+cursor {
+    xcursor-theme "Adwaita"
+}
